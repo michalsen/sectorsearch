@@ -1,0 +1,16 @@
+{
+    "name": "emichalsen/sector-search",
+    "description": "Test Game",
+    "require-dev": {
+        "twig/twig": "^2.4"
+    },
+    "authors": [
+        {
+            "name": "Eric Michalsen",
+            "email": "eric.michalsen@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    }
+}

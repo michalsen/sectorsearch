@@ -1,0 +1,48 @@
+{% block header %}
+  {% include 'head.html' %}
+{% endblock %}
+
+<div class="pm"></div>
+
+<div class="aside aside-1">
+  <strong>Current Resources</strong>
+  <div id="player_resources">test</div>
+
+  <ul>
+<!--    <li> Power: {{ Resources.power }}  MJ </li>
+   <li> Material: {{ Resources.material }}  t </li>
+   <li> Food: {{ Resources.food }}  km³</li>
+   <li> Metal: {{ Resources.metal }} kg/m³</li>
+   <li> Fuel: {{ Resources.fuel}}  kPa</li> -->
+  </ul>
+</div>
+
+<article class="main">
+
+  <ul>
+    <li> Sector: <strong>{{ playerdata.name }}</strong> </li>
+    <li> Suns: {{ playerdata.sun }} </li>
+    <li> Planets: </li>
+    <ul>
+      <li> Goldilocks: {{ playerdata.goldilocks_planets }} </li>
+      <li> Rocky: {{ playerdata.rocky_planets }} </li>
+      <li> Gas Giants: {{ playerdata.gas_planets }} </li>
+    </ul>
+    <li> Moons: {{ playerdata.moons }} </li>
+    <li> Asteroid Belts: {{ playerdata.belts }} </li>
+  </ul>
+
+
+</article>
+
+
+
+  {% include 'buttons.html' %}
+
+
+
+
+
+{% block footer %}
+  {% include 'footer.html' %}
+{% endblock %}
