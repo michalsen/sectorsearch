@@ -2,3 +2,4 @@
 .lando.yml
 .key
 .idea
+/cache/
