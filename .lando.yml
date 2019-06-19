@@ -1,0 +1,4 @@
+name: sectorsearch
+recipe: lamp
+config:
+  webroot: .

@@ -8,7 +8,7 @@ die();
 
   include('rb.php');
   //R::setup( 'sqlite:/tmp/dbfile.db' );
-  R::setup('mysql:host=localhost;dbname=sectorsearch','root', 'root');
+  R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 
   R::wipe('sector');
 
@@ -26,6 +26,7 @@ $z = 0;
       for ($z=0; $z < $ii; $z++){
         $sector = [];
         $sector['coordinates'] = $x . '-' . $y . '-' . $z;
+        print $sector['coordinates'] . "\n";
         buildSector($sector);
       }
     }

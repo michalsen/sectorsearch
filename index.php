@@ -18,7 +18,7 @@ if (isset($_REQUEST['logoff'])) {
 require_once 'vendor/autoload.php';
 
 require 'includes/rb.php';
-R::setup('mysql:host=localhost;dbname=sectorsearch','root', 'root');
+R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 
 require 'Classes/Player.php';
 require 'Classes/Resource.php';
