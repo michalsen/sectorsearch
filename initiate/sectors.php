@@ -4,10 +4,9 @@
  *  Build Sectors
  */
 
-die();
+// die();
 
-  include('rb.php');
-  //R::setup( 'sqlite:/tmp/dbfile.db' );
+  require '../includes/rb.php';
   R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 
   R::wipe('sector');

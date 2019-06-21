@@ -18,10 +18,6 @@ switch ($return['screen']) {
 
     $Resources = $resource->getResource($coor->coordinates);
 
-// print '<pre>';
-// // print_r($home);
-// print_r($Resources);
-// print '</pre>';
 
     $player = [];
 

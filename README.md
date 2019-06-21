@@ -4,5 +4,10 @@ v.01 SectorSearch
 
 v.02 SectorSearch
 
-Need to place db credentials in key file.
-.key file in .gitignore
+
+TO DO
+
+* db credentials in key file and .key file in .gitignore
+* R::setup in Class
+
+
