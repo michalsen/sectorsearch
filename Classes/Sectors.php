@@ -7,10 +7,18 @@
 class Sectors {
 
     public $id;
-    public $name;
+    public $coordinate;
     public $coor;
 
     public function __construct($coor) {
-       print 'coor: ' . $coor;
+       return $this->getNear($coor->coordinates);
     }
+
+    public function getNear($coordinate)
+    {
+
+      print $coordinate;
+
+    }
+
 }
