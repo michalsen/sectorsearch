@@ -9,18 +9,18 @@
   <div id="player_resources">test</div>
 
   <ul>
-<!--    <li> Power: {{ Resources.power }}  MJ </li>
+   <li> Power: {{ Resources.power }}  MJ </li>
    <li> Material: {{ Resources.material }}  t </li>
    <li> Food: {{ Resources.food }}  km³</li>
    <li> Metal: {{ Resources.metal }} kg/m³</li>
-   <li> Fuel: {{ Resources.fuel}}  kPa</li> -->
+   <li> Fuel: {{ Resources.fuel}}  kPa</li>
   </ul>
 </div>
 
 <article class="main">
 
   <ul>
-    <li> Sector: <strong>{{ playerdata.name }}</strong> </li>
+    <li> Home Sector: <strong>{{ playerdata.name }}</strong> </li>
     <li> Suns: {{ playerdata.sun }} </li>
     <li> Planets: </li>
     <ul>
@@ -36,6 +36,25 @@
 </article>
 
 
+<div class="aside aside-2">
+  <article class="sectors">
+
+    <strong>Sectors</strong>
+
+    <table>
+      <tr>
+        <td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td>
+      </tr>
+    </table>
+
+  </article>
+</div>
 
   {% include 'buttons.html' %}
 

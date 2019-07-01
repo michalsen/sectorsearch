@@ -3,7 +3,7 @@ session_start();
 require_once '../../vendor/autoload.php';
 require '../../Classes/Resource.php';
 require '../../includes/rb.php';
-R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp'););
+R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 
 $return = '';
 if (count($_REQUEST) > 0) {

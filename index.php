@@ -23,7 +23,7 @@ R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 require 'Classes/Player.php';
 require 'Classes/Resource.php';
 require 'Classes/Sector.php';
-
+require 'Classes/Sectors.php';
 require 'Classes/CreatePlayer.php';
 
 

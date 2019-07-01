@@ -3,7 +3,8 @@
 switch ($return['screen']) {
   case 'Home':
 
-    $sectors = new Sector();
+
+
     $resource = new Resource();
     $stats = $player->stats($_SESSION['player']);
 
@@ -16,6 +17,7 @@ switch ($return['screen']) {
                 array($homeID->home)
                );
 
+    $sectors = new Sectors($coor);
     $Resources = $resource->getResource($coor->coordinates);
 
 
