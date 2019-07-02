@@ -8,17 +8,22 @@ class Sectors {
 
 
     public $coor;
-    private $coordinates;
+    // private $coordinates;
 
     public function __construct($coor) {
-       return $this->coor = $coor;
+      $breakdown = explode('-', $coor);
+      $this->coor = $breakdown[0];
+
+      print_r($nearby);
+      return $nearby;
     }
 
-    private function getNear($coordinates)
-    {
+    // private function getNear($coordinates)
+    // {
 
-      return $coordinates;
+    //   $nearby = explode('-', $coordinates->coor);
+    //   return $nearby[0];
 
-    }
+    // }
 
 }

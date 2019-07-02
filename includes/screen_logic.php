@@ -48,7 +48,7 @@ switch ($return['screen']) {
 
 
     $sectors = new Sectors($playerData['coordinates']);
-    // print '<hr>';
+    print '<hr>';
     // print 'coor:' . $playerData['coordinates'];
     print_r($sectors);
 
