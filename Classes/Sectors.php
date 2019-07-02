@@ -6,18 +6,17 @@
 
 class Sectors {
 
-    public $id;
-    public $coordinate;
+
     public $coor;
 
     public function __construct($coor) {
-       return $this->getNear($coor->coordinates);
+       return $this->getNear($coor);
     }
 
-    public function getNear($coordinate)
+    public function getNear($coordinates)
     {
 
-      print $coordinate;
+      return $coordinates;
 
     }
 
