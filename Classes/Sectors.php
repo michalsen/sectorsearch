@@ -8,12 +8,13 @@ class Sectors {
 
 
     public $coor;
+    private $coordinates;
 
     public function __construct($coor) {
-       return $this->getNear($coor);
+       return $this->coor = $coor;
     }
 
-    public function getNear($coordinates)
+    private function getNear($coordinates)
     {
 
       return $coordinates;

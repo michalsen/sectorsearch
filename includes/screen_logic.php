@@ -17,7 +17,7 @@ switch ($return['screen']) {
                 array($homeID->home)
                );
 
-    $sectors = new Sectors($coor->coordinates);
+
     $Resources = $resource->getResource($coor->coordinates);
 
 
@@ -46,10 +46,10 @@ switch ($return['screen']) {
       }
     }
 
-    print $playerData['coordinates'];
 
     $sectors = new Sectors($playerData['coordinates']);
-
+    // print '<hr>';
+    // print 'coor:' . $playerData['coordinates'];
     print_r($sectors);
 
     $Resource = playerResources($_SESSION['player'], $stats, $playerdata);
