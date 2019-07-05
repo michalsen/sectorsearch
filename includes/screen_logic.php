@@ -48,9 +48,9 @@ switch ($return['screen']) {
 
 
     $sectors = new Sectors($playerData['coordinates']);
-    print '<hr>';
+    // print '<hr>';
     // print 'coor:' . $playerData['coordinates'];
-    print_r($sectors);
+    // print_r($sectors);
 
     $Resource = playerResources($_SESSION['player'], $stats, $playerdata);
 

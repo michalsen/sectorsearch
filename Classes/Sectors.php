@@ -14,8 +14,8 @@ class Sectors {
       $breakdown = explode('-', $coor);
       $this->coor = $breakdown[0];
 
-      print_r($nearby);
-      return $nearby;
+      print_r($coor);
+      return $coor;
     }
 
     // private function getNear($coordinates)
