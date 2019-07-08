@@ -43,3 +43,124 @@
              border-width: 1px;}
   .footer  { order: 4; }
 }
+
+#stage_sectors
+{
+    position: relative;
+  width: 20em;
+  height: 20em;
+  margin: 4em auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-20deg) rotateY(-40deg) perspective(600px);
+  transform: rotateX(-20deg) rotateY(-40deg) perspective(600px);
+  margin-top: 350px;
+}
+
+#sector_Sa, #sector_Sd, #sector_Sg
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+  border-radius: 1em;
+  margin-left: -300px;
+  margin-top: -300px;
+}
+
+#sector_Sb, #sector_Se, #sector_Sh
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+  border-radius: 1em;
+}
+
+#sector_Sc, #sector_Sf, #sector_Si
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+  border-radius: 1em;
+  margin-left: 300px;
+  margin-top: -300px;
+}
+
+
+#sector_Sa
+{
+
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+#sector_Sd
+{
+  -webkit-transform: translateZ(-300px);
+  transform: translateZ(-300px);
+}
+
+#sector_Sg
+{
+  -webkit-transform: translateZ(-600px);
+  transform: translateZ(-600px);
+}
+
+#sector_Sb
+{
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+#sector_Se
+{
+  -webkit-transform: translateZ(-300px);
+  transform: translateZ(-300px);
+}
+
+#sector_Sh
+{
+  -webkit-transform: translateZ(-600px);
+  transform: translateZ(-600px);
+}
+
+#sector_Sc
+{
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+#sector_Sf
+{
+  -webkit-transform: translateZ(-300px);
+  transform: translateZ(-300px);
+}
+
+#sector_Si
+{
+  -webkit-transform: translateZ(-600px);
+  transform: translateZ(-600px);
+}
+
+#sector_Sd { background-color: rgba(100,200,100,0.5); }
+#sector_Sg { background-color: rgba(100,100,200,0.5); }
+
+#sector_Se { background-color: rgba(100,200,100,0.5); }
+#sector_Sh { background-color: rgba(100,100,200,0.5); }
+
+#sector_Sf { background-color: rgba(100,200,100,0.5); }
+#sector_Si { background-color: rgba(100,100,200,0.5); }
