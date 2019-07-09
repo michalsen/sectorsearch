@@ -57,49 +57,140 @@
   margin-top: 350px;
 }
 
-#sector_Sa, #sector_Sd, #sector_Sg
+
+/*  First Row */
+#sector_Sa
 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  height: 65%;
   font-size: 2em;
   text-align: center;
   line-height: 10em;
   color: #fff;
   background-color: rgba(200,100,100,0.5);
-  border-radius: 1em;
-  margin-left: -300px;
-  margin-top: -300px;
+ /* border-radius: 1em;*/
+  margin-left: -400px;
+  margin-top: -200px;
 }
 
-#sector_Sb, #sector_Se, #sector_Sh
+#sector_Sd
 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  height: 65%;
   font-size: 2em;
   text-align: center;
   line-height: 10em;
   color: #fff;
   background-color: rgba(200,100,100,0.5);
-  border-radius: 1em;
+ /* border-radius: 1em;*/
+  margin-left: -200px;
+  margin-top: -200px;
 }
-
-#sector_Sc, #sector_Sf, #sector_Si
+#sector_Sg
 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  height: 65%;
   font-size: 2em;
   text-align: center;
   line-height: 10em;
   color: #fff;
   background-color: rgba(200,100,100,0.5);
-  border-radius: 1em;
-  margin-left: 300px;
-  margin-top: -300px;
+ /* border-radius: 1em;*/
+  margin-left: 0px;
+  margin-top: -200px;
 }
 
+
+/*  second Row */
+#sector_Sb
+{
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+   margin-left: -400px;
+  margin-top: 0px;
+ /* border-radius: 1em;*/
+}
+#sector_Se
+{
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+   margin-left: -200px;
+  margin-top: 0px;
+ /* border-radius: 1em;*/
+}
+#sector_Sh
+{
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+   margin-left: 0px;
+  margin-top: 0px;
+ /* border-radius: 1em;*/
+}
+
+/*  Third Row */
+#sector_Sc
+{
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+ /* border-radius: 1em;*/
+  margin-left: -400px;
+  margin-top: 200px;
+}
+#sector_Sf
+{
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+ /* border-radius: 1em;*/
+  margin-left: -200px;
+  margin-top: 200px;
+}
+#sector_Si
+{
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 10em;
+  color: #fff;
+  background-color: rgba(200,100,100,0.5);
+ /* border-radius: 1em;*/
+  margin-left: 0px;
+  margin-top: 200px;
+}
 
 #sector_Sa
 {
@@ -110,14 +201,14 @@
 
 #sector_Sd
 {
-  -webkit-transform: translateZ(-300px);
-  transform: translateZ(-300px);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 #sector_Sg
 {
-  -webkit-transform: translateZ(-600px);
-  transform: translateZ(-600px);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 #sector_Sb
@@ -128,14 +219,14 @@
 
 #sector_Se
 {
-  -webkit-transform: translateZ(-300px);
-  transform: translateZ(-300px);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 #sector_Sh
 {
-  -webkit-transform: translateZ(-600px);
-  transform: translateZ(-600px);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 #sector_Sc
@@ -146,21 +237,24 @@
 
 #sector_Sf
 {
-  -webkit-transform: translateZ(-300px);
-  transform: translateZ(-300px);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 #sector_Si
 {
-  -webkit-transform: translateZ(-600px);
-  transform: translateZ(-600px);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
+#sector_Sa { background-color: rgba(100,200,100,0.5); }
 #sector_Sd { background-color: rgba(100,200,100,0.5); }
-#sector_Sg { background-color: rgba(100,100,200,0.5); }
+#sector_Sg { background-color: rgba(100,200,100,0.5); }
 
+#sector_Sb { background-color: rgba(100,200,100,0.5); }
 #sector_Se { background-color: rgba(100,200,100,0.5); }
-#sector_Sh { background-color: rgba(100,100,200,0.5); }
+#sector_Sh { background-color: rgba(100,200,100,0.5); }
 
+#sector_Sc { background-color: rgba(100,200,100,0.5); }
 #sector_Sf { background-color: rgba(100,200,100,0.5); }
-#sector_Si { background-color: rgba(100,100,200,0.5); }
+#sector_Si { background-color: rgba(100,200,100,0.5); }
