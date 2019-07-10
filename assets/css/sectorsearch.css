@@ -59,18 +59,18 @@
 
 
 /*  First Row */
-#sector_Sa
+#sector_Sa, #sector_Ta, #sector_Za
 {
   margin-left: -400px;
   margin-top: -200px;
 }
 
-#sector_Sd
+#sector_Sd, #sector_Td, #sector_Zd
 {
   margin-left: -200px;
   margin-top: -200px;
 }
-#sector_Sg
+#sector_Sg, #sector_Tg, #sector_Zg
 {
   margin-left: 0px;
   margin-top: -200px;
@@ -78,41 +78,43 @@
 
 
 /*  second Row */
-#sector_Sb
+#sector_Sb, #sector_Tb, #sector_Zb
 {
   margin-left: -400px;
   margin-top: 0px;
 }
-#sector_Se
+#sector_Se, #sector_Te, #sector_Ze
 {
   margin-left: -200px;
   margin-top: 0px;
 }
-#sector_Sh
+#sector_Sh, #sector_Th, #sector_Zh
 {
   margin-left: 0px;
   margin-top: 0px;
 }
 
 /*  Third Row */
-#sector_Sc
+#sector_Sc, #sector_Tc, #sector_Zc
 {
   margin-left: -400px;
   margin-top: 200px;
 }
-#sector_Sf
+#sector_Sf, #sector_Tf, #sector_Zf
 {
   margin-left: -200px;
   margin-top: 200px;
 }
-#sector_Si
+#sector_Si, #sector_Ti, #sector_Zi
 {
 
   margin-left: 0px;
   margin-top: 200px;
 }
 
-#sector_Sa, #sector_Sd, #sector_Sg, #sector_Sb, #sector_Se, #sector_Sh, #sector_Sc, #sector_Sf, #sector_Si
+#sector_Sa, #sector_Sd, #sector_Sg, #sector_Sb, #sector_Se, #sector_Sh, #sector_Sc, #sector_Sf, #sector_Si,
+#sector_Ta, #sector_Td, #sector_Tg, #sector_Tb, #sector_Te, #sector_Th, #sector_Tc, #sector_Tf, #sector_Ti,
+#sector_Za, #sector_Zd, #sector_Zg, #sector_Zb, #sector_Ze, #sector_Zh, #sector_Zc, #sector_Zf, #sector_Zi
 {
   position: absolute;
   width: 65%;
@@ -121,13 +123,28 @@
   text-align: center;
   line-height: 10em;
   color: #fff;
-  background-color: rgba(200,100,100,0.5);
-  background-color: rgba(100,200,100,0.5);
-  -webkit-transform: translateZ(-300px);
-  transform: translateZ(-300px);
 }
 
+#sector_Sa, #sector_Sd, #sector_Sg, #sector_Sb, #sector_Se, #sector_Sh, #sector_Sc, #sector_Sf, #sector_Si
+{
+  background-color: rgba(400,200,100,0.75);
+  -webkit-transform: translateZ(-400px);
+  transform: translateZ(-400px);
+}
 
+#sector_Ta, #sector_Td, #sector_Tg, #sector_Tb, #sector_Te, #sector_Th, #sector_Tc, #sector_Tf, #sector_Ti
+{
+  background-color: rgba(100,200,100,0.50);
+  -webkit-transform: translateZ(-200px);
+  transform: translateZ(-200px);
+}
+
+#sector_Za, #sector_Zd, #sector_Zg, #sector_Zb, #sector_Ze, #sector_Zh, #sector_Zc, #sector_Zf, #sector_Zi
+{
+  background-color: rgba(191, 148, 63, 0.30);
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
 /*#sector_Sa { background-color: rgba(100,200,100,0.5); }
 #sector_Sd { background-color: rgba(100,200,100,0.5); }
 #sector_Sg { background-color: rgba(100,200,100,0.5); }

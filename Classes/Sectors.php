@@ -40,7 +40,9 @@ class Sectors {
       $this->Ti = ($breakdown[0] + 1) . '-' . ($breakdown[1] + 1 . '-' . ($breakdown[2]));
 
       // Zeta
-      $this->Za = ($breakdown[0] - 1) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2] + 1));
+      $sectorZa = ($breakdown[0] - 1) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2] + 1));
+      $this->Za = $sectorZa . ';;;';
+
       $this->Zb = ($breakdown[0] ) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2] + 1));
       $this->Zc = ($breakdown[0] + 1) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2] + 1));
 
