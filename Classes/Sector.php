@@ -12,17 +12,17 @@ class Sector {
 
     // }
 
-    public function readSector($id) {
-     $sectorStat = new SplFileObject('db/sectors.lst');
-        while (!$sectorStat->eof()) {
-           $sectorReturn = json_decode($sectorStat->fgets());
-           if (is_object($sectorReturn)) {
-             if ($sectorReturn->coordinates == $id) {
-               $return = $sectorReturn;
-             }
-           }
-         }
-     return $return;
+    public function readSector($coor) {
+     // $sectorStat = new SplFileObject('db/sectors.lst');
+     //    while (!$sectorStat->eof()) {
+     //       $sectorReturn = json_decode($sectorStat->fgets());
+     //       if (is_object($sectorReturn)) {
+     //         if ($sectorReturn->coordinates == $id) {
+     //           $return = $sectorReturn;
+     //         }
+     //       }
+     //     }
+     return 'coor: ' . $coor;
     }
 
     public function readSectorname($name) {
