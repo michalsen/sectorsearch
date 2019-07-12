@@ -4,7 +4,7 @@ class Sector {
 
     public $id;
     public $name;
-    public $corrodinates;
+    public $coor;
     // public $sectorStat;
     // public $sectorReturn;
 

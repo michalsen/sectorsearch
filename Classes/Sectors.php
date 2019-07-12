@@ -16,6 +16,36 @@ class Sectors {
       $sector = new Sector();
 
 
+     $sectors = [
+                  ['name' => 'Sa', 'compute' => [' - 1', ' - 1', ' - 1']],
+                  ['name' => 'Sb', 'compute' => [' ', ' - 1', ' - 1']],
+                  ['name' => 'Sc', 'compute' => [' + 1', ' - 1', ' - 1']],
+                  ['name' => 'Sd', 'compute' => [' - 1', ' ', ' - 1']],
+                  ['name' => 'Se', 'compute' => [' ', ' ', ' - 1']],
+                  ['name' => 'Sf', 'compute' => [' + 1', ' ', ' - 1']],
+                  ['name' => 'Sg', 'compute' => [' - 1', ' + 1', ' - 1']],
+                  ['name' => 'Sh', 'compute' => [' ', ' + 1', ' - 1']],
+                  ['name' => 'Si', 'compute' => [' + 1', ' + 1', ' - 1']],
+                  ['name' => 'Ta', 'compute' => [' - 1', ' - 1', ' - 1']],
+                  ['name' => 'Tb', 'compute' => [' ', ' - 1', ' - 1']],
+                  ['name' => 'Tc', 'compute' => [' + 1', ' - 1', ' - 1']],
+                  ['name' => 'Td', 'compute' => [' - 1', ' ', ' - 1']],
+                  ['name' => 'Te', 'compute' => [' ', ' ', ' - 1']],
+                  ['name' => 'Tf', 'compute' => [' + 1', ' ', ' - 1']],
+                  ['name' => 'Tg', 'compute' => [' - 1', ' + 1', ' - 1']],
+                  ['name' => 'Th', 'compute' => [' ', ' + 1', ' - 1']],
+                  ['name' => 'Ti', 'compute' => [' + 1', ' + 1', ' - 1']],
+                  ['name' => 'Za', 'compute' => [' - 1', ' - 1', ' - 1']],
+                  ['name' => 'Zb', 'compute' => [' ', ' - 1', ' - 1']],
+                  ['name' => 'Zc', 'compute' => [' + 1', ' - 1', ' - 1']],
+                  ['name' => 'Zd', 'compute' => [' - 1', ' ', ' - 1']],
+                  ['name' => 'Ze', 'compute' => [' ', ' ', ' - 1']],
+                  ['name' => 'Zf', 'compute' => [' + 1', ' ', ' - 1']],
+                  ['name' => 'Zg', 'compute' => [' - 1', ' + 1', ' - 1']],
+                  ['name' => 'Zh', 'compute' => [' ', ' + 1', ' - 1']],
+                  ['name' => 'Zi', 'compute' => [' + 1', ' + 1', ' - 1']],
+                ];
+
 
       // Sigma
       $this->Sa = $sector->readSector(($breakdown[0] - 1) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2] - 1)));
@@ -35,8 +65,6 @@ class Sectors {
       $this->Tb = $sector->readSector(($breakdown[0] ) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2])));
       $this->Tc = $sector->readSector(($breakdown[0] + 1) . '-' . ($breakdown[1] - 1 . '-' . ($breakdown[2])));
       $this->Td = $sector->readSector(($breakdown[0] - 1) . '-' . ($breakdown[1] . '-' . ($breakdown[2])));
-      // $this->Td = $sectorTd;
-
 
       $this->Te = $sector->readSector(($breakdown[0]) . '-' . ($breakdown[1] . '-' . ($breakdown[2])));
       $this->Tf = $sector->readSector(($breakdown[0] + 1) . '-' . ($breakdown[1] . '-' . ($breakdown[2])));
