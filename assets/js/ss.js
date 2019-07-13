@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
 
+  $('#sigma_plane').click(function() {
+    console.log('toggle');
+    $('#sector_Sa, #sector_Sd, #sector_Sg, #sector_Sb, #sector_Se, #sector_Sh, #sector_Sc, #sector_Sf, #sector_Si').toggle();
+  });
+  $('#tao_plane').click(function() {
+    $('#sector_Ta, #sector_Td, #sector_Tg, #sector_Tb, #sector_Te, #sector_Th, #sector_Tc, #sector_Tf, #sector_Ti').toggle();
+  });
+  $('#zeta_plane').click(function() {
+    $('#sector_Za, #sector_Zd, #sector_Zg, #sector_Zb, #sector_Ze, #sector_Zh, #sector_Zc, #sector_Zf, #sector_Zi').toggle();
+  });
+
+
   $('#purchase_miner').click(function() {
       purchase($(this).attr("value"));
   });

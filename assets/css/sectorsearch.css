@@ -55,7 +55,7 @@
   transform-style: preserve-3d;
   -webkit-transform: rotateX(-20deg) rotateY(-40deg) perspective(600px);
   transform: rotateX(-20deg) rotateY(-40deg) perspective(600px);
-  margin-top: 350px;
+  margin-top: 300px;
 }
 
 
@@ -130,9 +130,10 @@
 {
   color: tan;
   font-size: 12px;
-  background-color: rgba(400,200,100,0.75);
+  background-color: rgba(400,200,100,1);
   -webkit-transform: translateZ(-400px);
   transform: translateZ(-400px);
+  display: none;
 }
 
 #sector_Ta, #sector_Td, #sector_Tg, #sector_Tb, #sector_Te, #sector_Th, #sector_Tc, #sector_Tf, #sector_Ti
@@ -142,6 +143,7 @@
   background-color: rgba(100,200,100,0.50);
   -webkit-transform: translateZ(-200px);
   transform: translateZ(-200px);
+  display: inline;
 }
 
 #sector_Za, #sector_Zd, #sector_Zg, #sector_Zb, #sector_Ze, #sector_Zh, #sector_Zc, #sector_Zf, #sector_Zi
@@ -151,13 +153,6 @@
   background-color: rgba(191, 148, 63, 0.30);
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
+  display: none;
 }
-/*#sector_Sa { background-color: rgba(100,200,100,0.5); }
-#sector_Sd { background-color: rgba(100,200,100,0.5); }
-#sector_Sg { background-color: rgba(100,200,100,0.5); }
-#sector_Sb { background-color: rgba(100,200,100,0.5); }
-#sector_Se { background-color: rgba(100,200,100,0.5); }
-#sector_Sh { background-color: rgba(100,200,100,0.5); }
-#sector_Sc { background-color: rgba(100,200,100,0.5); }
-#sector_Sf { background-color: rgba(100,200,100,0.5); }
-#sector_Si { background-color: rgba(100,200,100,0.5); }*/
+

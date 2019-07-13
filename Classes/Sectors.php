@@ -48,36 +48,32 @@ class Sectors {
 
 
       foreach ($sectors as $key => $value) {
-        $compute0  = compute($breakdown[0], $value['compute'][0]);
-        $compute1  = compute($breakdown[1], $value['compute'][1]);
-        $compute2  = compute($breakdown[2], $value['compute'][2]);
+        $compute0  = $this->compute($breakdown[0], $value['compute'][0]);
+        $compute1  = $this->compute($breakdown[1], $value['compute'][1]);
+        $compute2  = $this->compute($breakdown[2], $value['compute'][2]);
         $this->{$value['name']} = $sector->readSector($compute0 . '-' . $compute1 . '-' .  $compute2);
       }
 
     }
 
+    public function compute($num1, $num2) {
+        $length = strlen($num2);
+
+        $operator = array();
+        for ($i=0; $i<$length; $i++) {
+            $operator[$i] = $num2[$i];
+        }
+
+        switch($operator[0]) {
+            case "+": return $num1 + $operator[1];
+            case "-": return $num1 - $operator[1];
+            case "*": return $num1 * $operator[1];
+            case "/": return $num1 / $operator[1];
+        return pow($num1, $operator[1]);
+        }
+      }
+
 
 }
 
-function compute($num1, $num2) {
-
-    $length = strlen($num2);
-
-
-    $operator = array();
-    for ($i=0; $i<$length; $i++) {
-        $operator[$i] = $num2[$i];
-    }
-
-    switch($operator[0]) {
-        case "+": return $num1 + $operator[1];
-        case "-": return $num1 - $operator[1];
-        case "*": return $num1 * $operator[1];
-        case "/": return $num1 / $operator[1];
-    return pow($num1, $operator[1]);
-
-        // and handle errors:
-        // default: throw new UnexpectedValueException("Invalid operator");
-    }
-  }
 
