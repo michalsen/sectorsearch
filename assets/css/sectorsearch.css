@@ -156,3 +156,8 @@
   display: none;
 }
 
+#sector_Te {
+  background-color: green;
+  border: 5px;
+  border-color: black;
+}
