@@ -161,3 +161,9 @@
   border: 5px;
   border-color: black;
 }
+
+.sector_button {
+  font-size: 2em;
+  line-height: .95em;
+}
+
