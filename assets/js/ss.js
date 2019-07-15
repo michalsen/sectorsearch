@@ -13,6 +13,10 @@ $(document).ready(function() {
   });
 
 
+  $('.sector_link').click(function(e) {
+      console.log(this.id);
+  });
+
   $('#purchase_miner').click(function() {
       purchase($(this).attr("value"));
   });
