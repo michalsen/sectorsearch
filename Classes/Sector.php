@@ -16,7 +16,8 @@ class Sector {
         $sector = R::findOne('sectors',' coordinates = ? ',
                 array( $coor )
                );
-       return $sector['name'];
+      $name = preg_replace('/-/', '<br>', $sector['name']);
+       return $name;
     }
 
     public function readSectorname($name) {
