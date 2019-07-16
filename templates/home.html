@@ -19,19 +19,6 @@
 
 <article class="main">
 
-  <ul>
-    <li> Home Sector: <strong>{{ playerdata.name }}</strong> </li>
-    <li> Suns: {{ playerdata.sun }} </li>
-    <li> Planets: </li>
-    <ul>
-      <li> Goldilocks: {{ playerdata.goldilocks_planets }} </li>
-      <li> Rocky: {{ playerdata.rocky_planets }} </li>
-      <li> Gas Giants: {{ playerdata.gas_planets }} </li>
-    </ul>
-    <li> Moons: {{ playerdata.moons }} </li>
-    <li> Asteroid Belts: {{ playerdata.belts }} </li>
-  </ul>
-
 
 </article>
 
@@ -45,47 +32,47 @@
         <button id="tao_plane" value="Tao">Tao</button>
         <button id="sigma_plane" value="Sigma">Sigma</button>
       </div>
-
+        <div class="stage_details">stage_details</div>
       <div id="stage_sectors">
 
-        <div id="sector_Sa"><a href="#" class="sector_link" id="Sa">{{ Sectors.Sa | raw }}</a></div>
-        <div id="sector_Sd"><a href="#" class="sector_link" id="Sd">{{ Sectors.Sd | raw }}</a></div>
-        <div id="sector_Sg"><a href="#" class="sector_link" id="Sg">{{ Sectors.Sg | raw }}</a></div>
+        <div id="sector_Sa"><a href="#" class="sector_link" id="Sa" data="{{ Sectors.Sa }}">{{ Sectors.Sa | raw }}</a></div>
+        <div id="sector_Sd"><a href="#" class="sector_link" id="Sd" data="{{ Sectors.Sd }}">{{ Sectors.Sd | raw }}</a></div>
+        <div id="sector_Sg"><a href="#" class="sector_link" id="Sg" data="{{ Sectors.Sg }}">{{ Sectors.Sg | raw }}</a></div>
 
-        <div id="sector_Sb"><a href="#" class="sector_link" id="Sb">{{ Sectors.Sb | raw }}</a></div>
-        <div id="sector_Se"><a href="#" class="sector_link" id="Se">{{ Sectors.Se | raw }}</a></div>
-        <div id="sector_Sh"><a href="#" class="sector_link" id="Sh">{{ Sectors.Sh | raw }}</a></div>
+        <div id="sector_Sb"><a href="#" class="sector_link" id="Sb" data="{{ Sectors.Sb }}">{{ Sectors.Sb | raw }}</a></div>
+        <div id="sector_Se"><a href="#" class="sector_link" id="Se" data="{{ Sectors.Se }}">{{ Sectors.Se | raw }}</a></div>
+        <div id="sector_Sh"><a href="#" class="sector_link" id="Sh" data="{{ Sectors.Sh }}">{{ Sectors.Sh | raw }}</a></div>
 
-        <div id="sector_Sc"><a href="#" class="sector_link" id="Sc">{{ Sectors.Sc | raw }}</a></div>
-        <div id="sector_Sf"><a href="#" class="sector_link" id="Sf">{{ Sectors.Sf | raw }}</a></div>
-        <div id="sector_Si"><a href="#" class="sector_link" id="Si">{{ Sectors.Si | raw }}</a></div>
+        <div id="sector_Sc"><a href="#" class="sector_link" id="Sc" data="{{ Sectors.Sc }}">{{ Sectors.Sc | raw }}</a></div>
+        <div id="sector_Sf"><a href="#" class="sector_link" id="Sf" data="{{ Sectors.Sf }}">{{ Sectors.Sf | raw }}</a></div>
+        <div id="sector_Si"><a href="#" class="sector_link" id="Si" data="{{ Sectors.Si }}">{{ Sectors.Si | raw }}</a></div>
 
-        <div id="sector_Ta"><a href="#" class="sector_link" id="Ta">{{ Sectors.Ta | raw }}</a></div>
-        <div id="sector_Td"><a href="#" class="sector_link" id="Td">{{ Sectors.Td | raw }}</a></div>
-        <div id="sector_Tg"><a href="#" class="sector_link" id="Tg">{{ Sectors.Tg | raw }}</a></div>
+        <div id="sector_Ta"><a href="#" class="sector_link" id="Ta" data="{{ Sectors.Ta }}">{{ Sectors.Ta | raw }}</a></div>
+        <div id="sector_Td"><a href="#" class="sector_link" id="Td" data="{{ Sectors.Td }}">{{ Sectors.Td | raw }}</a></div>
+        <div id="sector_Tg"><a href="#" class="sector_link" id="Tg" data="{{ Sectors.Tg }}">{{ Sectors.Tg | raw }}</a></div>
 
-        <div id="sector_Tb"><a href="#" class="sector_link" id="Tb">{{ Sectors.Tb | raw }}</a></div>
-        <div id="sector_Te"><a href="#" class="sector_link" id="Te">{{ Sectors.Te | raw }}</a></div>
-        <div id="sector_Th"><a href="#" class="sector_link" id="Th">{{ Sectors.Th | raw }}</a></div>
+        <div id="sector_Tb"><a href="#" class="sector_link" id="Tb" data="{{ Sectors.Tb }}">{{ Sectors.Tb | raw }}</a></div>
+        <div id="sector_Te"><a href="#" class="sector_link" id="Te" data="{{ Sectors.Te }}">{{ Sectors.Te | raw }}</a></div>
+        <div id="sector_Th"><a href="#" class="sector_link" id="Th" data="{{ Sectors.Th }}">{{ Sectors.Th | raw }}</a></div>
 
-        <div id="sector_Tc"><a href="#" class="sector_link" id="Tc">{{ Sectors.Tc | raw }}</a></div>
-        <div id="sector_Tf"><a href="#" class="sector_link" id="Tf">{{ Sectors.Tf | raw }}</a></div>
-        <div id="sector_Ti"><a href="#" class="sector_link" id="Ti">{{ Sectors.Ti | raw }}</a></div>
+        <div id="sector_Tc"><a href="#" class="sector_link" id="Tc" data="{{ Sectors.Tc }}">{{ Sectors.Tc | raw }}</a></div>
+        <div id="sector_Tf"><a href="#" class="sector_link" id="Tf" data="{{ Sectors.Tf }}">{{ Sectors.Tf | raw }}</a></div>
+        <div id="sector_Ti"><a href="#" class="sector_link" id="Ti" data="{{ Sectors.Ti }}">{{ Sectors.Ti | raw }}</a></div>
 
-        <div id="sector_Za"><a href="#" class="sector_link" id="Za">{{ Sectors.Za | raw }}</a></div>
-        <div id="sector_Zd"><a href="#" class="sector_link" id="Zd">{{ Sectors.Zd | raw }}</a></div>
-        <div id="sector_Zg"><a href="#" class="sector_link" id="Zg">{{ Sectors.Zg | raw }}</a></div>
+        <div id="sector_Za"><a href="#" class="sector_link" id="Za" data="{{ Sectors.Za }}">{{ Sectors.Za | raw }}</a></div>
+        <div id="sector_Zd"><a href="#" class="sector_link" id="Zd" data="{{ Sectors.Zd }}">{{ Sectors.Zd | raw }}</a></div>
+        <div id="sector_Zg"><a href="#" class="sector_link" id="Zg" data="{{ Sectors.Zg }}">{{ Sectors.Zg | raw }}</a></div>
 
-        <div id="sector_Zb"><a href="#" class="sector_link" id="Zb">{{ Sectors.Zb | raw }}</a></div>
-        <div id="sector_Ze"><a href="#" class="sector_link" id="Ze">{{ Sectors.Ze | raw }}</a></div>
-        <div id="sector_Zh"><a href="#" class="sector_link" id="Zh">{{ Sectors.Zh | raw }}</a></div>
+        <div id="sector_Zb"><a href="#" class="sector_link" id="Zb" data="{{ Sectors.Zb }}">{{ Sectors.Zb | raw }}</a></div>
+        <div id="sector_Ze"><a href="#" class="sector_link" id="Ze" data="{{ Sectors.Ze }}">{{ Sectors.Ze | raw }}</a></div>
+        <div id="sector_Zh"><a href="#" class="sector_link" id="Zh" data="{{ Sectors.Zh }}">{{ Sectors.Zh | raw }}</a></div>
 
-        <div id="sector_Zc"><a href="#" class="sector_link" id="Zc">{{ Sectors.Zc | raw }}</a></div>
-        <div id="sector_Zf"><a href="#" class="sector_link" id="Zf">{{ Sectors.Zf | raw }}</a></div>
-        <div id="sector_Zi"><a href="#" class="sector_link" id="Zi">{{ Sectors.Zi | raw }}</a></div>
+        <div id="sector_Zc"><a href="#" class="sector_link" id="Zc" data="{{ Sectors.Zc }}">{{ Sectors.Zc | raw }}</a></div>
+        <div id="sector_Zf"><a href="#" class="sector_link" id="Zf" data="{{ Sectors.Zf }}">{{ Sectors.Zf | raw }}</a></div>
+        <div id="sector_Zi"><a href="#" class="sector_link" id="Zi" data="{{ Sectors.Zi }}">{{ Sectors.Zi | raw }}</a></div>
      </div>
 
-        <div class="stage_details">stage_details</div>
+
   </article>
 
 </div>

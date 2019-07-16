@@ -13,10 +13,10 @@ class Sector {
     // }
 
     public function readSector($coor) {
-        $sector = R::findOne('sectors',' coordinates = ? ',
+       $sector = R::findOne('sectors',' coordinates = ? ',
                 array( $coor )
                );
-      $name = preg_replace('/-/', '<br>', $sector['name']);
+       $name = preg_replace('/-/', '<br>', $sector['name']);
        return $name;
     }
 

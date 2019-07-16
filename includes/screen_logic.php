@@ -55,7 +55,7 @@ switch ($return['screen']) {
 
     echo $template->render(array(
               'player' => $player,
-              'playerdata' => $playerData,
+              // 'playerdata' => $playerData,
               'Resources' => $Resource['Resources'],
               'Sectors' => $sectors,
             )

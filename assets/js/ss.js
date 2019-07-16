@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 
   $('.sector_link').click(function(e) {
-      sectorDetail(this.id);
+      sectorDetail(this);
   });
 
   $('#purchase_miner').click(function() {
@@ -26,16 +26,16 @@ $(document).ready(function() {
 
 
   var sectorDetail = function(e) {
-     var id = (e);
-     console.log(id);
+     var id = (e.id);
+     var data = (e.getAttribute('data'));
      var sendData = jQuery.ajax({
                type: 'POST',
                cache: false,
                async: false,
                url: '/assets/ajax/sector.php',
-               data: {id},
+               data: {id, data},
                  success: function(resultData) {
-                     console.log(resultData);
+                     // console.log(resultData);
                      $('.stage_details').html('<div class="stage_details">'+resultData+'</div>');
                  },
                  failure: function(http, state, error) {

@@ -6,21 +6,38 @@ require '../../includes/rb.php';
 R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 
 
+// print_r($_REQUEST);
 
-// $return = '';
-// if (count($_REQUEST) > 0) {
-//   foreach ($_REQUEST as $type => $item) {
-//     $return .= $type . ': ' . $item . '<br>';
+$sector = preg_replace('/<br>/', '-', $_REQUEST['data']);
+// print $sector;
 
-//       $purchase = new Resource();
-//       $purchaseID = $purchase->resourcePurchase($type, $item);
 
-//     echo 'purchaseID: ' . $purchaseID;
+    $sectorDetail = R::find('sectors',' name = ? ',
+         array( $sector )
+       );
 
-//   }
-// }
-//  else {
-//   $return = 'nope';
-//  }
+foreach ($sectorDetail as $key => $value) {
+  // print $key;
+  // print '<pre>';
+  // print $value->id;
+  // print_r($value);
+  // print '</pre>';
 
-echo 'test';
+
+  $return = '<ul>
+    <li> Suns: ' . $value->sun . ' </li>
+    <li> Planets: </li>
+    <ul>
+      <li> Goldilocks: ' . $value->goldilocks_planets . ' </li>
+      <li> Rocky: ' . $value->rocky_planets . ' </li>
+      <li> Gas Giants: ' . $value->gas_planets . ' </li>
+    </ul>
+    <li> Moons: ' . $value->moons . ' </li>
+    <li> Asteroid Belts: ' . $value->belts . ' </li>
+  </ul>';
+
+
+  print $return;
+
+}
+
