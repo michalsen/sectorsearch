@@ -16,9 +16,9 @@ $sector = preg_replace('/<br>/', '-', $_REQUEST['data']);
 
 foreach ($sectorDetail as $key => $value) {
 
-  $sectorDetail = R::find('sectorsmapped',' pid = ? ', [$_SESSION['player']]);
+  $sectorDetail = R::findOne('sectorsmapped',' pid = ?  AND home = ?', [$_SESSION['player'], $value->coordinates]);
 
-  if(is_array($sectorDetail)) {
+  if(is_object($sectorDetail)) {
   $return = '<ul>
     <li> Suns: ' . $value->sun . ' </li>
     <li> Planets: </li>
