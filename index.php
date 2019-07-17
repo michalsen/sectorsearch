@@ -61,9 +61,9 @@ if (!isset($_SESSION['player'])) {
 
   if (isset($_REQUEST['register'])) {
 
-      $cor['x'] = rand(0, 10);
-      $cor['y'] = rand(0, 10);
-      $cor['z'] = rand(0, 10);
+      $cor['x'] = rand(0, 9);
+      $cor['y'] = rand(0, 9);
+      $cor['z'] = rand(0, 9);
       $coordinates = $cor['x'] . '-' . $cor['y'] . '-' . $cor['z'];
 
       $player = R::dispense( 'players' );
@@ -79,6 +79,11 @@ if (!isset($_SESSION['player'])) {
       $recourse->home = $coordinates;
       $recourse->start = date('U');
       $rid = R::store($recourse);
+
+      $sectors_mapped = R::dispense( 'sectorsmapped' );
+      $sectors_mapped->pid = $id;
+      $sectors_mapped->home = $coordinates;
+      $sec_map = R::store($sectors_mapped);
 
       $home = R::findOne('players', 'id = ?', array($id));
       $home->home =  $rid;

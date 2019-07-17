@@ -16,7 +16,6 @@ class CreatePlayer{
       $cor['z'] = rand(0, 10);
       $coordinates = $cor['x'] . '-' . $cor['y'] . '-' . $cor['z'];
 
-      print '<pre>';
       $player = R::dispense( 'players' );
       $player->name = 'admin';
       $player->pass = '098f6bcd4621d373cade4e832627b4f6';
@@ -24,7 +23,7 @@ class CreatePlayer{
       $player->legion = NULL;
       $id = R::store($player);
 
-      $recourse = R::dispense( 'recourse' );
+      $recourse = R::dispense( 'resource' );
       $recourse->pid = $id;
       $recourse->home = $coordinates;
       $recourse->start = date('U');

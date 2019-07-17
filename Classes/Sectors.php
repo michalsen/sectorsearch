@@ -48,6 +48,9 @@ class Sectors {
 
 
       foreach ($sectors as $key => $value) {
+
+        // $value1 = ($value['compute'][0] > 2 ? $value['compute'][0] : 9);
+
         $compute0  = $this->compute($breakdown[0], $value['compute'][0]);
         $compute1  = $this->compute($breakdown[1], $value['compute'][1]);
         $compute2  = $this->compute($breakdown[2], $value['compute'][2]);

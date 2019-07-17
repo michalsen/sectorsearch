@@ -15,18 +15,10 @@ $sector = preg_replace('/<br>/', '-', $_REQUEST['data']);
     $sectorDetail = R::find('sectors',' name = ? ', [$sector]);
 
 foreach ($sectorDetail as $key => $value) {
-  // print $key;
-  // print '<pre>';
-  // print $value->id;
-  // print_r($value);
-  // print '</pre>';
 
-  $sectorDetail = R::find('sectors_mapped',' id = ? ', [$value->id]);
+  $sectorDetail = R::find('sectorsmapped',' pid = ? ', [$_SESSION['player']]);
 
-  print '<pre>';
-  print_r($sectorDetail);
-  print '</pre>';
-
+  if(is_array($sectorDetail)) {
   $return = '<ul>
     <li> Suns: ' . $value->sun . ' </li>
     <li> Planets: </li>
@@ -38,7 +30,10 @@ foreach ($sectorDetail as $key => $value) {
     <li> Moons: ' . $value->moons . ' </li>
     <li> Asteroid Belts: ' . $value->belts . ' </li>
   </ul>';
-
+  }
+   else {
+    $return = 'Send Scouts';
+   }
 
   print $return;
 
