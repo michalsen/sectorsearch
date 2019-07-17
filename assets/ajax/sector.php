@@ -6,20 +6,23 @@ require '../../includes/rb.php';
 R::setup('mysql:host=database;dbname=lamp','lamp', 'lamp');
 
 
-// print_r($_REQUEST);
+
 
 $sector = preg_replace('/<br>/', '-', $_REQUEST['data']);
 // print $sector;
 
 
-    $sectorDetail = R::find('sectors',' name = ? ', [$sector]);
+$sectorDetail = R::find('sectors',' name = ? ', [$sector]);
+// print '<pre>';
+// print_r($sectorDetail);
+// print '</pre>';
 
 foreach ($sectorDetail as $key => $value) {
-
+  print $value->coordinates . '<br>';
   $sectorDetail = R::findOne('sectorsmapped',' pid = ?  AND home = ?', [$_SESSION['player'], $value->coordinates]);
 
   if(is_object($sectorDetail)) {
-  $return = '<ul>
+  $return = $sector . '<ul>
     <li> Suns: ' . $value->sun . ' </li>
     <li> Planets: </li>
     <ul>
@@ -32,7 +35,7 @@ foreach ($sectorDetail as $key => $value) {
   </ul>';
   }
    else {
-    $return = 'Send Scouts';
+    $return = 'Send Scouts to ' . $value->coordinates;
    }
 
   print $return;

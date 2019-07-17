@@ -11,6 +11,7 @@ class Sectors {
     // private $coordinates;
 
     public function __construct($coor) {
+      print 'coor' . $coor;
       $breakdown = explode('-', $coor);
 
       $sector = new Sector();
@@ -53,15 +54,16 @@ class Sectors {
           $value0 = ($breakdown[0] > 0 ? $breakdown[0] : 9);
           $value1 = ($breakdown[1] > 0 ? $breakdown[1] : 9);
           $value2 = ($breakdown[2] > 0 ? $breakdown[2] : 9);
+          $compute0  = $this->compute($value0, $value['compute'][0]);
+          $compute1  = $this->compute($value1, $value['compute'][1]);
+          $compute2  = $this->compute($value2, $value['compute'][2]);
         }
          else {
-          $value0 = $breakdown[0];
-          $value1 = $breakdown[1];
-          $value2 = $breakdown[2];
+          $compute0 = $breakdown[0];
+          $compute1 = $breakdown[1];
+          $compute2 = $breakdown[2];
          }
-        $compute0  = $this->compute($value0, $value['compute'][0]);
-        $compute1  = $this->compute($value1, $value['compute'][1]);
-        $compute2  = $this->compute($value2, $value['compute'][2]);
+
 
         $this->{$value['name']} = $sector->readSector($compute0 . '-' . $compute1 . '-' .  $compute2);
       }
