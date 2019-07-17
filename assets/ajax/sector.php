@@ -12,9 +12,7 @@ $sector = preg_replace('/<br>/', '-', $_REQUEST['data']);
 // print $sector;
 
 
-    $sectorDetail = R::find('sectors',' name = ? ',
-         array( $sector )
-       );
+    $sectorDetail = R::find('sectors',' name = ? ', [$sector]);
 
 foreach ($sectorDetail as $key => $value) {
   // print $key;
@@ -23,6 +21,11 @@ foreach ($sectorDetail as $key => $value) {
   // print_r($value);
   // print '</pre>';
 
+  $sectorDetail = R::find('sectors_mapped',' id = ? ', [$value->id]);
+
+  print '<pre>';
+  print_r($sectorDetail);
+  print '</pre>';
 
   $return = '<ul>
     <li> Suns: ' . $value->sun . ' </li>

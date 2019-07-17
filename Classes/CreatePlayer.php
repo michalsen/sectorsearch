@@ -30,7 +30,14 @@ class CreatePlayer{
       $recourse->start = date('U');
       $rid = R::store($recourse);
 
-      $home = R::findOne('players', 'id = ?', array($id));
+      $sectors_mapped = R::dispense('sectors_mapped');
+      $sectors_mapped->pid = $id;
+      $sectors_mapped->home = $coordinates;
+      $sec_map = R::store($sectors_mapped);
+
+      print_r($sec_map);
+
+      $home = R::findOne('players', 'id = ?', [$id]);
       $home->home =  $rid;
       R::store($home);
 
