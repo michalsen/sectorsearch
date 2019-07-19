@@ -14,3 +14,4 @@ turns out the TODO is way to long here. So many issues.
 * R::setup in Class
 * New player needs to utilize Class
 * Sector layout is not correct
+* Sector math is not working at edge
