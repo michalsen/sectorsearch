@@ -17,11 +17,6 @@ switch ($return['screen']) {
                 array($homeID->home)
                );
 
-// print '<pre>';
-// print_r($homeID->home);
-// print '<br>';
-// print_r($coor);
-// print '</pre>';
 
     $Resources = $resource->getResource($coor->coordinates);
 
