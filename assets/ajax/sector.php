@@ -18,7 +18,7 @@ $sectorDetail = R::find('sectors',' name = ? ', [$sector]);
 // print '</pre>';
 
 foreach ($sectorDetail as $key => $value) {
-  print $value->coordinates . '<br>';
+  // print $value->coordinates . '<br>';
   $sectorDetail = R::findOne('sectorsmapped',' pid = ?  AND home = ?', [$_SESSION['player'], $value->coordinates]);
 
   if(is_object($sectorDetail)) {
@@ -35,7 +35,9 @@ foreach ($sectorDetail as $key => $value) {
   </ul>';
   }
    else {
-    $return = 'Send Scouts to ' . $value->coordinates;
+    $return = '';
+    $return .= '<button id="send_scout" data-coor="' . $value->coordinates . '">Send Scout to ' . $value->name . '</button><br>';
+    $return .= '<button id="send_miner" data-coor="' . $value->coordinates . '">Send Miner to ' . $value->name . '</button><br>';
    }
 
   print $return;
